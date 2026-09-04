@@ -143,6 +143,12 @@ header.scrolled{border-color:var(--line); background:rgba(8,10,13,0.92);}
 .mobile-menu .mm-social{display:flex; gap:24px; margin-top:32px;}
 .mobile-menu .mm-social a{font-family:var(--f-mono); font-size:0.85rem; border:none; padding:0; color:var(--blue-light);}
 
+@media(max-width:860px){
+  .nav-links, .nav-social{display:none;}
+  .nav-toggle{display:flex;}
+  .nav-right{gap:0;}
+}
+
 /* ================= HERO ================= */
 .hero{
   position:relative;
@@ -183,7 +189,7 @@ header.scrolled{border-color:var(--line); background:rgba(8,10,13,0.92);}
 .hero-statement .accent{color:var(--blue-light);}
 .hero-sub{color:var(--muted); font-size:1.02rem; max-width:460px; margin-bottom:34px;}
 .hero-ctas{display:flex; flex-wrap:wrap; gap:14px; margin-bottom:34px;}
-.hero-social{display:flex; gap:22px; align-items:center;}
+.hero-social{display:flex; gap:18px 22px; align-items:center; flex-wrap:wrap;}
 .hero-social a{display:flex; align-items:center; gap:8px; font-family:var(--f-mono); font-size:0.78rem; color:var(--muted); letter-spacing:0.05em;}
 .hero-social a:hover{color:var(--blue-light);}
 .hero-social svg{width:15px; height:15px;}
